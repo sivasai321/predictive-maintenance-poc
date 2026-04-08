@@ -1,0 +1,6 @@
+2026-04-07 18:02:00,726 | INFO | Model and scaler loaded successfully
+2026-04-07 18:02:00,739 | INFO | Data loaded successfully
+2026-04-08 11:07:39,015 | ERROR | Error loading model/scaler: [Errno 2] No such file or directory: '../models/anomaly_model.pkl'
+2026-04-08 11:09:29,273 | ERROR | Error loading model/scaler: [Errno 2] No such file or directory: '../models/anomaly_model.pkl'
+2026-04-08 11:10:29,924 | INFO | Model and scaler loaded successfully
+2026-04-08 11:10:29,936 | INFO | Data loaded successfully

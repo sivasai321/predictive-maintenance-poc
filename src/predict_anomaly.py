@@ -135,15 +135,14 @@ with open(OUTPUT_CSV, "w", newline="") as csvfile:
                 # -------------------------------
                 print(f"[{i}] {status} | Score: {score:.3f} | Avg: {avg_score:.3f}")
 
-                # -------------------------------
+                
                 # CSV output 
-                # -------------------------------
+                
                 timestamp = datetime.datetime.now()
                 writer.writerow([timestamp, i, score, avg_score, status])
 
-                # -------------------------------
                 # Alert logic with cooldown
-                # -------------------------------
+
                 current_time = time.time()
 
                 if (
@@ -161,7 +160,7 @@ with open(OUTPUT_CSV, "w", newline="") as csvfile:
                 logging.error(f"Error processing row {i}: {e}")
 
             time.sleep(SLEEP_TIME)
-# final metrics
+# final summary and logging
 if total > 0:
     anomaly_rate = anomalies / total
     print(f"\n📊 Total Processed: {total}")
